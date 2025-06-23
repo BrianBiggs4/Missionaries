@@ -22,7 +22,7 @@ class Queue(Generic[T]):
     
     # Node acts as a wrapper around a state. Node that a state came from is its parent. 
 class Node(Generic[T]):
-    def __init__(self, state: T, parent: Optional[Node], cost: float = 0.0, heuristic: float = 0.0) -> None:
+    def __init__(self, state: T, parent: Optional[Node]) -> None:
         self.state = state
         self.parent = parent
 
